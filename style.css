@@ -1,0 +1,39 @@
+.circle {
+  float: left;
+  shape-outside: polygon(0 0, 0 100%, 300px 0px);
+  width: 50%;
+  height: 1000px;
+}
+
+.circle2 {
+  float: right;
+  shape-outside: polygon(300px 0px, 300px 100%, 0 100%);
+  width: 50%;
+  height: 1000px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+p {
+  text-justify: justify;
+  width: 100%;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 15px;
+  line-height: 1.5;
+  background: linear-gradient(to bottom, #d38312, #a83279);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "vidaloka";
+}
+
+@media only screen and (max-width: 600px) {
+  .circle,
+  .circle2 {
+    display: none;
+  }
+}
