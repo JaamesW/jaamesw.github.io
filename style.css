@@ -35,8 +35,8 @@ a:hover { opacity: 1;}
 .intro {
     font-size: 48px; 
     display: flex;
-    justify-content: center;
-    height: 70vh;
+    padding-top: 300px; 
+    height: 80vh;
     color: white; 
     flex-direction: column;
 }
@@ -177,3 +177,38 @@ a:hover { opacity: 1;}
     line-height: 1.5; 
     margin-top: 15px; 
   }
+
+
+.social-wrap {
+  margin-top: 40px; 
+}
+
+.codepen,
+.spotify,
+.linkedin,
+.twitter,
+.github {
+  opacity: 0;
+  animation-name: slide-up;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-fill-mode: forwards;
+  animation-duration: 1s; 
+  animation-delay: .5s; 
+}
+.github { animation-delay: .6s; }
+.spotify { animation-delay: .7s; }
+.linkedin { animation-delay: .8s; }
+.twitter { animation-delay: .9s; }
+
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
