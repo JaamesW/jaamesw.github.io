@@ -15,7 +15,7 @@ a:hover { opacity: 1;}
 
 .home-header { padding: 2em; }
 
-@media (min-width: 600px) { .home-header { padding: 2em 4em; }}
+@media (min-width: 900px) { .home-header { padding: 2em 4em; }}
 
 .header { 
   font-size: 16px; 
@@ -26,7 +26,7 @@ a:hover { opacity: 1;}
   align-items: flex-end;
 }
 
-@media (min-width: 600px)  {
+@media (min-width: 900px)  {
   .header {
     flex-direction: row;
     font-size: 15px; 
@@ -39,7 +39,7 @@ a:hover { opacity: 1;}
   margin-top: 15px; 
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   .nav {
     margin-left: 200px; 
     margin-top: 0; 
@@ -54,15 +54,15 @@ a:hover { opacity: 1;}
 .intro {
     font-size: 24px; 
     display: flex;
-    height: calc(100vh - 130px);
+    height: calc(100vh - 200px);
     color: white; 
     flex-direction: column;
     padding-top: 80px; 
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   .intro {
-    height: 80vh;
+    height: calc(100vh - 390px);;
     padding-top: 300px; 
     font-size: 48px; 
   }
@@ -120,12 +120,6 @@ a:hover { opacity: 1;}
   color: white; 
   transition: 100ms ease-out; 
 }
-
-.previous-employers span:hover {
-    background-color: #fff247;
-    cursor: default; 
-}
-
 
 .box { 
   position: relative;
@@ -195,7 +189,7 @@ a:hover { opacity: 1;}
     flex-direction: column;
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 900px) {
     .about-wrap {
       padding: 0 4em; 
       flex-direction: row; 
@@ -221,7 +215,7 @@ a:hover { opacity: 1;}
   margin-top: 80px; 
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   .social-wrap { margin-top: 40px; }
 }
 
@@ -263,6 +257,36 @@ a:hover { opacity: 1;}
   margin-top: 1em; 
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   .footer { padding: 2em 64px; }
 }
+
+.intro-secondary h4 {
+  color: white;
+  font-size: 20px;
+  font-family: 'raleway';
+  font-weight: 400; 
+  text-transform: uppercase; 
+}
+
+.intro-secondary h4 span { opacity: .5; font-weight: 300;  }
+
+.responsibilities {
+  font-size: 15px;
+  line-height: 1.6;
+  color: white;
+  font-family: 'raleway';
+  font-weight: 300;
+  margin-right: 50px; 
+}
+
+.history-wrap {
+  display: flex;
+}
+
+.work-history-item { 
+  width: 100%;
+  max-width: 500px; 
+}
+
+.work-history-item + .work-history-item { margin-top: 100px; }
