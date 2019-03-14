@@ -4,11 +4,20 @@ body {
   margin: 0 auto;  
 }
 
-a {
+a,
+.active {
   color: white;
   opacity: .7;
   transition: 100ms ease-out; 
   text-decoration: none; 
+}
+
+.active { 
+  opacity: 1;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;  
 }
 
 a:hover { opacity: 1;}
@@ -183,7 +192,8 @@ a:hover { opacity: 1;}
 .twitter,
 .github,
 .intro,
-.about-me-intro {
+.about-me-intro,
+.about-wrap {
   opacity: 0;
   animation-name: slide-up;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -192,10 +202,13 @@ a:hover { opacity: 1;}
   animation-delay: .5s; 
 }
 .github { animation-delay: .6s; }
+
 .spotify,
 .intro,
 .about-me-intro{ animation-delay: .7s; }
-.linkedin { animation-delay: .8s; }
+
+.linkedin
+.about-wrap { animation-delay: .8s; }
 .twitter { animation-delay: .9s; }
 
 
