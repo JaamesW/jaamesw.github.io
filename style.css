@@ -1,6 +1,6 @@
 body {
   background-color: #181818; 
-  max-width: 1440px;
+  /*max-width: 1440px; */
   margin: 0 auto;  
 }
 
@@ -13,9 +13,17 @@ a {
 
 a:hover { opacity: 1;}
 
-.home-header { padding: 2em; }
 
-@media (min-width: 900px) { .home-header { padding: 2em 4em; }}
+
+.home-header { padding: 20px; }
+
+@media (min-width: 900px) { 
+  .home-header { 
+    padding: 32px 48px; 
+    max-width: 1300px;
+    margin: 0 auto; 
+  }
+}
 
 .header { 
   font-size: 18px; 
@@ -95,8 +103,7 @@ a:hover { opacity: 1;}
   /* about me */
   .about-me-img {
     max-width: 100%; 
-    opacity: .7; 
-    margin-right: 50px; 
+    transform: translateY(-120px);
   }
 
   .about-me-intro {
@@ -119,36 +126,46 @@ a:hover { opacity: 1;}
       font-size: 100px; 
       line-height: .9; 
     }
+
+    .about-me-img {
+      margin-right: 125px; 
+      max-width: 500px; 
+    }
   }
 
-  .about-wrap {
-    color: white; 
+  .about-container {
+    background-color: white;
+  }
+
+  .about-wrap { 
     font-family: 'hind'; 
-    font-size: 20px; 
+    color: #181818; 
+    font-size: 24px; 
     display: flex;
     flex-direction: column;
-    margin-top: 200px; 
+    margin-top: 200px;
+    padding: 0 20px 150px 20px;  
   }
 
   @media (min-width: 900px) {
     .about-wrap {
-      padding: 0 4em; 
+      padding: 32px 64px; 
       flex-direction: row; 
+      max-width: 1300px;
+      margin: 200px auto; 
     }
   }
 
   .h2-intro {
-    font-size: 32px; 
-    font-weight: 300; 
+    font-size: 36px; 
+    font-weight: 600; 
     line-height: 1.4; 
-    padding: 24px; 
   }
 
   .p {
     font-weight: 300;
     line-height: 1.5; 
-    margin-top: 15px;
-    padding: 0 24px; 
+    margin-top: 20px; 
   }
 
   .header {
@@ -198,12 +215,16 @@ a:hover { opacity: 1;}
   font-size: 12px; 
   color: rgba(255,255,255,.6);
   font-family: 'raleway';
-  padding: 2em; 
+  padding: 20px; 
   margin-top: 125px; 
 }
 
 @media (min-width: 900px) {
-  .footer { padding: 2em 64px; }
+  .footer { 
+    padding: 32px 64px; 
+    max-width: 1300px;
+    margin: 0 auto; 
+  }
 }
 
 .intro-secondary .feature h4 {
