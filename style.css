@@ -343,3 +343,87 @@ a:hover { opacity: 1;}
   width: 100%;
 }
 
+
+/* GENALPHA */
+body.genalpha {
+  background: #181818;
+  animation: color-me-in 2s; /* other keywords like "infinite alternate" can be useful here */
+  animation-fill-mode: forwards; 
+}
+
+@keyframes color-me-in {
+  /* You could think of as "step 1" */
+  0% {
+    background: #181818;
+  }
+  /* You could think of as "step 2" */
+  100% {
+    background: #0288D1;
+  }
+}
+
+.genalpha .intro-secondary .feature h4 {
+  font-size: 54px;
+  margin-bottom: 20px; 
+}
+
+.genalpha p, 
+li {
+  color: white; 
+  margin: 0 0 15px 0; 
+  font-family: 'hind'; 
+  font-size: 24px; 
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.genalpha .placeholder-image {
+  background-color:#00000040;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  align-items: center;
+  text-transform: uppercase; 
+  height: 50vh; 
+  padding: 0 30px; 
+  margin: 75px 0; 
+}
+
+figcaption {
+  color: white;
+  margin-top: 10px;
+  opacity: .6; 
+  font-size: 12px;
+  font-family: 'roboto mono';
+}
+
+ul {
+  margin: 0; 
+}
+
+.case-study {
+  max-height: 70vh;
+  overflow: hidden; 
+  position: relative; 
+}
+
+.case-study-feature {
+  min-width: 1800px;
+  border-radius: 2px; 
+}
+
+.case-study:hover:after {
+  background-color: transparent;
+
+}
+
+.case-study:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0; 
+  bottom: 0;
+  left: 0; 
+  background-color: rgba(0,0,0,.5);  
+  transition: 200ms ease-out; 
+}
