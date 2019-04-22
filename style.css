@@ -427,3 +427,13 @@ ul {
   background-color: rgba(0,0,0,.5);  
   transition: 200ms ease-out; 
 }
+
+.case-study-image {
+  max-width: 100%; 
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2); 
+}
+
+.case-study-image + .case-study-image {
+  margin-top: 50px; 
+}
