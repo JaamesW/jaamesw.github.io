@@ -343,11 +343,28 @@ a:hover { opacity: 1;}
   width: 100%;
 }
 
+/* ZYWAVE */
+body.zywave {
+  background: #181818;
+  animation: color-me-in-Z 2s; 
+  animation-fill-mode: forwards; 
+}
+
+@keyframes color-me-in-Z {
+  /* You could think of as "step 1" */
+  0% {
+    background: #181818;
+  }
+  /* You could think of as "step 2" */
+  100% {
+    background: #4CAF50;
+  }
+}
 
 /* GENALPHA */
 body.genalpha {
   background: #181818;
-  animation: color-me-in 2s; /* other keywords like "infinite alternate" can be useful here */
+  animation: color-me-in 2s; 
   animation-fill-mode: forwards; 
 }
 
@@ -362,12 +379,14 @@ body.genalpha {
   }
 }
 
-.genalpha .intro-secondary .feature h4 {
+.genalpha .intro-secondary .feature h4,
+.zywave .intro-secondary .feature h4 {
   font-size: 54px;
   margin-bottom: 20px; 
 }
 
-.genalpha p, 
+.genalpha p,
+.zywave p, 
 li {
   color: white; 
   margin: 0 0 15px 0; 
