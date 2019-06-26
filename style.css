@@ -327,20 +327,22 @@ a:hover { opacity: 1;}
   grid-gap: 40px;
 }
 
-.placeholder-image {
-  background-color:#00000040;
-  display: flex;
-  justify-content: center;
-  flex-direction: column; 
-  align-items: center;
-  text-transform: uppercase; 
-  height: 90vh; 
-  padding: 0 30px; 
+/* SHRED */
+body.shred {
+  background: #181818;
+  animation: color-me-in-S 2s; 
+  animation-fill-mode: forwards; 
 }
 
-.placeholder-image svg {
-  max-width: 500px;
-  width: 100%;
+@keyframes color-me-in-S {
+  /* You could think of as "step 1" */
+  0% {
+    background: #181818;
+  }
+  /* You could think of as "step 2" */
+  100% {
+    background: #FF6D00;
+  }
 }
 
 /* ZYWAVE */
@@ -380,18 +382,20 @@ body.genalpha {
 }
 
 .genalpha .intro-secondary .feature h4,
-.zywave .intro-secondary .feature h4 {
+.zywave .intro-secondary .feature h4
+.shred .intro-secondary .feature h4 {
   font-size: 54px;
   margin-bottom: 20px; 
 }
 
 .genalpha p,
 .zywave p, 
+.shred p,
 li {
   color: white; 
   margin: 0 0 15px 0; 
   font-family: 'hind'; 
-  font-size: 24px; 
+  font-size: 22px; 
   font-weight: 300;
   line-height: 1.5;
 }
@@ -451,6 +455,7 @@ ul {
   max-width: 100%; 
   border-radius: 2px;
   box-shadow: 0 1px 3px rgba(0,0,0,.2); 
+  margin: 50px 0; 
 }
 
 .case-study-image + .case-study-image {
