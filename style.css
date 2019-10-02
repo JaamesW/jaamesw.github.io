@@ -279,6 +279,10 @@ a:hover { opacity: 1;}
 
 .work-history-item + .work-history-item { margin-top: 100px; }
 
+.center {
+  margin: 0 auto; 
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -382,7 +386,7 @@ body.genalpha {
 }
 
 .genalpha .intro-secondary .feature h4,
-.zywave .intro-secondary .feature h4
+.zywave .intro-secondary .feature h4,
 .shred .intro-secondary .feature h4 {
   font-size: 54px;
   margin-bottom: 20px; 
